@@ -1,15 +1,4 @@
 @import "libs/libs";
+@import "vars/variables";
 @import "fonts/fonts";
-
-h1 {
-  font-family: "Open Sans";
-  font-size: 30px;
-  font-weight: normal;
-  font-style: italic;
-}
-p {
-  font-family: "Freestyle Script";
-  font-size: 41px;
-  font-weight: normal;
-  font-style: italic;
-}
+@import "components/base";
