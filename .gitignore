@@ -1,0 +1,7 @@
+.env
+.env.test
+.gulp
+.npm
+node_modules/
+app/backend/connect.php
+dist/backend/connect.php

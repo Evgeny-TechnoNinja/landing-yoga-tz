@@ -1,0 +1,41 @@
+{
+  "name": "landing-yoga",
+  "version": "1.0.0",
+  "description": "task from dZENcode company",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "landing",
+    "site"
+  ],
+  "author": "TechnoNinja",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-tinypng": "^1.0.2",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {
+    "baguettebox.js": "^1.11.1",
+    "dotenv": "^8.2.0",
+    "jquery": "^3.4.1",
+    "jquery-nice-select": "^1.1.0",
+    "normalize.css": "^8.0.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
