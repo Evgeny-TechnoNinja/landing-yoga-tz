@@ -190,3 +190,7 @@ button:active,
 .button:focus {
   outline: 0;
 }
+
+.body_pointer * {
+  cursor: pointer;
+}

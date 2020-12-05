@@ -1,0 +1,40 @@
+.logo {
+  @media (min-width: $xl) {
+    padding-top: 3px;
+  }
+  &__link {
+    text-decoration: none;
+    color: $swatch_4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $md) {
+      flex-direction: column;
+    }
+    &:hover {
+      color: $swatch_4;
+    }
+  }
+  &__figure {
+    margin: 0;
+    width: 64px;
+    @media (min-width: $xl) {
+      width: 66px;
+    }
+  }
+  &__picture {
+  }
+  &__txt {
+    font-family: "Champagne & Limousines";
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    @media (min-width: $md) {
+      padding-top: 3px;
+    }
+    @media (min-width: $xl) {
+      padding-top: 2px;
+    }
+  }
+}

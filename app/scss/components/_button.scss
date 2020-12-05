@@ -1,0 +1,13 @@
+.button-menu-open {
+  padding: 0;
+  border-width: 0px;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
+
+.button-menu-close {
+  @extend .button-menu-open;
+}

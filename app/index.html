@@ -23,9 +23,64 @@
   <body class="page">
     <div class="content-wrap">
       <header class="header">
-        <div class="container"></div>
+        <div class="header__content-mobile">
+          <nav class="menu-mobile">
+            <div class="menu-mobile__box-button">
+              <button class="button-menu-open" id="btnMenuOpen">
+                <svg class="menu-mobile__icon">
+                  <use xlink:href="../img/svg/sprite.svg#menu"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-mobile__popup">
+              <div class="menu-mobile__box-button">
+                <button class="button-menu-close" id="btnMenuClose">
+                  <svg class="menu-mobile__icon">
+                    <use xlink:href="../img/svg/sprite.svg#close"></use>
+                  </svg>
+                </button>
+              </div>
+              <ul class="menu-mobile__list">
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">About us</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Reservation</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Gallery</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Blog </a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Elements</a></li>
+                <li class="menu-mobile__item"><a class="menu-mobile__link" href="#">Shop</a></li>
+              </ul>
+            </div>
+            <div class="menu-mobile__box-logo">
+              <div class="logo"><a class="logo__link" href="/">
+                  <figure class="logo__figure"><img class="logo__picture" src="../img/logo-yoga.png" alt="logo yoga"></figure><span class="logo__txt">yoga</span></a></div>
+            </div>
+          </nav>
+        </div>
+        <div class="header__content-full-screen">
+          <nav class="menu">
+            <div class="container">
+              <div class="menu__box-content">
+                <ul class="menu__list">
+                  <li class="menu__item"><a class="menu__link" href="#">About us</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Reservation</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Gallery</a></li>
+                  <li class="menu__item">
+                    <div class="menu__box-logo">
+                      <div class="logo"><a class="logo__link" href="/">
+                          <figure class="logo__figure"><img class="logo__picture" src="../img/logo-yoga.png" alt="logo yoga"></figure><span class="logo__txt">yoga</span></a></div>
+                    </div>
+                  </li>
+                  <li class="menu__item"><a class="menu__link" href="#">Blog </a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Elements</a></li>
+                  <li class="menu__item"><a class="menu__link" href="#">Shop</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="section section-hero"></section>
+      </main>
     </div>
     <script src="libs/libs-min.js"></script>
     <script src="js/common-min.js"></script>
