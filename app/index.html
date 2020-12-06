@@ -79,7 +79,50 @@
         </div>
       </header>
       <main class="main">
-        <section class="section section-hero"></section>
+        <section class="section section-hero">
+          <div class="section__background"><img class="section__picture" src="../img/hero-bg.png" alt="background"></div>
+          <div class="section__overlay"></div>
+          <div class="container">
+            <div class="grid">
+              <div class="grid__item grid__item_change_two width-1-1 width-1-2-lg">
+                <div class="section-hero__box-form">
+                  <form class="form" name="form" method="post">
+                    <div class="form__header"><span class="form__title">Trial Class</span></div>
+                    <div class="form__group">
+                      <div class="form__box-field">
+                        <input class="form__field" data-rule="name" type="text" name="userName" placeholder="Enter your name" autocomplete="off" maxlength="20" title="Only text allowed" required>
+                      </div>
+                      <div class="form__box-field">
+                        <input class="form__field" data-rule="phone" type="tel" name="userPhone" pattern="^[0-9\(\)\+\-\s]+$" placeholder="Enter your phone" autocomplete="off" minlength="7" maxlength="20" title="Example: +8 (818) 263-50-00" required>
+                      </div>
+                      <div class="form__box-select">
+                        <select class="form__select" id="formSelect" data-rule="service" name="selectClass">
+                          <option disabled selected>Chose your class</option>
+                          <option value="health">Yoga For Health</option>
+                          <option value="children">Yoga For Children</option>
+                          <option value="weight">Yoga For Lose Weight</option>
+                          <option value="elderly">Yoga For Elderly</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form__footer">
+                      <div class="form__box-button">
+                        <input class="button" type="submit" name="submit" value="Try it">
+                      </div>
+                      <div class="form__box-inform"><span class="form__txt-inform" id="inform">send</span></div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="grid__item width-1-1 width-1-2-lg">
+                <div class="section-hero__box-content-text">
+                  <h1 class="section__heading"><span class="section__heading_position section__heading_theme_white section__heading_position_outer">Just Balance</span><span class="section__heading_position section__heading_theme_white">your Mind &amp; Body</span></h1>
+                  <p class="section__subtitle"><span class="section__subtitle_position section__subtitle_theme_white">Create the healthy living</span><span class="section__subtitle_position section__subtitle_theme_white">for yourself</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
     <script src="libs/libs-min.js"></script>

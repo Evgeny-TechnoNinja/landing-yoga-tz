@@ -11,3 +11,19 @@
 .button-menu-close {
   @extend .button-menu-open;
 }
+
+.button {
+  padding: 17px 64px;
+  border-width: 0px;
+  background-color: $swatch_1;
+  box-shadow: 2px 2px 5px $swatch_17;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  color: $swatch_0;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  &:hover {
+    background-color: lighten($swatch_1, 2%);
+  }
+}

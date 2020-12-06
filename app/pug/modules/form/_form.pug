@@ -1,0 +1,20 @@
+form.form(name="form" method="post")
+  .form__header
+    span.form__title Trial Class
+  .form__group
+    .form__box-field
+      input.form__field(data-rule="name" type="text" name="userName" placeholder="Enter your name" autocomplete="off" maxlength="20" title="Only text allowed" required)
+    .form__box-field
+      input.form__field(data-rule="phone" type="tel" name="userPhone" pattern="^[0-9\\(\\)\\+\\-\\s]+$" placeholder="Enter your phone" autocomplete="off" minlength="7" maxlength="20" title="Example: +8 (818) 263-50-00" required)
+    .form__box-select
+      select.form__select#formSelect(data-rule="service" name="selectClass")
+        option(disabled selected) Chose your class
+        option(value="health") Yoga For Health
+        option(value="children") Yoga For Children
+        option(value="weight") Yoga For Lose Weight
+        option(value="elderly") Yoga For Elderly
+  .form__footer
+    .form__box-button
+      input.button(type="submit" name="submit" value="Try it")
+    .form__box-inform
+      span.form__txt-inform#inform send

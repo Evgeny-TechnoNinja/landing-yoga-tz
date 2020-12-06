@@ -1,0 +1,86 @@
+.form {
+  padding: 36px 36px 35px 30px;
+  border-radius: 20px;
+  box-shadow: 6px 6px 10px $swatch_17;
+  background-color: $swatch_0;
+  &__header {
+  }
+  &__title {
+    color: $swatch_4;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  &__group {
+    margin-top: 25px;
+  }
+  &__box-field {
+    margin-top: 17px;
+  }
+  &__field {
+    padding: 18px 10px;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    color: $swatch_9;
+    background-color: $swatch_7;
+    border-radius: 8px;
+    border-width: 0px;
+    &::placeholder {
+      color: $swatch_9;
+      font-weight: 400;
+    }
+    &:focus::placeholder {
+      color: transparent;
+    }
+    &:focus {
+      color: $swatch_4;
+      background-color: lighten($swatch_7, 1%);
+    }
+  }
+  &__box-select {
+    @extend .form__box-field;
+  }
+  &__select ~ .nice-select {
+    width: 100%;
+    @extend .form__field;
+    padding-top: 7px;
+    height: 52px;
+  }
+  &__footer {
+    margin-top: 78px;
+    text-align: center;
+  }
+  &__box-button {
+    width: 170px;
+    margin-left: auto;
+    position: relative;
+    top: 17px;
+  }
+  &__box-inform {
+    position: relative;
+    top: 25px;
+  }
+  &__txt-inform {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    opacity: 0;
+  }
+  .nice-select.open .list {
+    width: 100%;
+  }
+  .nice-select:after {
+    border: 5px solid transparent;
+    border-top: 5px solid $swatch_9;
+    transform: rotate(0);
+    transform-origin: 56% 28%;
+  }
+  .nice-select.open:after {
+    transform: rotate(180deg);
+    border-top-color: $swatch_4;
+  }
+}
+
+.js-form-invalid {
+  border: 1px solid $swatch_18;
+}
