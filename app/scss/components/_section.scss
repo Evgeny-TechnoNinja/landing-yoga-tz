@@ -24,11 +24,16 @@
     opacity: 0.8;
   }
   &__heading {
-    @media (min-width: $lg) {
-      font-size: 45px;
-    }
     @media (min-width: $xl) {
-      font-size: 48px;
+      font-size: 30px;
+    }
+    &_size {
+      @media (min-width: $lg) {
+        font-size: 45px;
+      }
+      @media (min-width: $xl) {
+        font-size: 48px;
+      }
     }
     &_position {
       display: block;
@@ -47,6 +52,9 @@
     margin-top: 0;
     font-family: "Freestyle Script", serif;
     font-size: 29px;
+    @media (min-width: $xl) {
+      margin-top: 34px;
+    }
     @media (min-width: $lg) {
       font-size: 35px;
       line-height: 45px;
@@ -56,6 +64,9 @@
     }
     &_position {
       display: block;
+      &_outer {
+        margin-top: -10px;
+      }
     }
     &_theme {
       &_white {
@@ -106,6 +117,33 @@
     @media (min-width: $xl) {
       margin-top: 215px;
       padding-left: 71px;
+    }
+  }
+}
+
+// section program
+.section-program {
+  margin-top: 70px;
+  @media (min-width: $xl) {
+    margin-top: 117px;
+  }
+  &__box-text {
+    text-align: center;
+  }
+  &__box-card-program {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 292px;
+    @media (min-width: $sm) {
+      width: 310px;
+    }
+    @media (min-width: $md) {
+      width: 570px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 66px;
+      width: 100%;
     }
   }
 }

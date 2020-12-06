@@ -1,0 +1,12 @@
+mixin cardProgram(cardProgramTitle, pathImg, specialModifierLeft)
+  .card-program(class=specialModifierLeft)
+    .grid
+      .grid__item.grid__item_position.width-1-1.width-1-2-md
+        .card-program__box-picture
+          figure.card-program__figure
+            img.card-program__picture(src=pathImg, alt="Photo")
+      .grid__item.grid__item_position.width-1-1.width-1-2-md
+        .card-program__box-description
+          p.card-program__title #{cardProgramTitle}
+          p.card-program__txt Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+          p.card-program__txt.card-program__txt_theme_light.card-program__txt_position_inner.card-program__txt_position_outer Ashtanga - Hatha

@@ -1,0 +1,84 @@
+.card-program {
+  padding: 10px;
+  max-width: 570px;
+  border-radius: 18px;
+  box-shadow: 4px 4px 20px #0000001a;
+  &_position {
+    &_outer {
+      &_left {
+        @media (min-width: $xl) {
+          position: relative;
+          left: 18px;
+        }
+      }
+    }
+  }
+  @media (min-width: $md) {
+    height: 300px;
+    border-radius: 8px;
+  }
+  &__box-picture {
+    width: 100%;
+    border-radius: 18px;
+    overflow: hidden;
+    @media (min-width: $md) {
+      border-radius: 0;
+    }
+  }
+  &__figure {
+    margin: 0;
+    display: flex;
+    @media (min-width: $md) {
+      display: inline-block;
+    }
+  }
+  &__picture {
+    width: 100%;
+    object-fit: fill;
+  }
+  &__box-description {
+    margin-top: 26px;
+    @media (min-width: $md) {
+      margin-top: 46px;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: $swatch_5;
+    @media (min-width: $md) {
+      text-align-last: left;
+      padding-left: 15px;
+    }
+  }
+  &__txt {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: justify;
+    @media (min-width: $md) {
+      margin-top: 21px;
+      text-align: left;
+      padding-left: 15px;
+      padding-right: 33px;
+    }
+    &_theme {
+      &_light {
+        color: $swatch_6;
+      }
+    }
+    &_position {
+      &_inner {
+        padding-top: 5px;
+        @media (min-width: $md) {
+          padding-top: 0;
+        }
+      }
+      &_outer {
+        margin-top: -10px;
+      }
+    }
+  }
+}

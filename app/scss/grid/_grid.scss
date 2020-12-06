@@ -22,3 +22,18 @@
     }
   }
 }
+
+.grid > .grid__item_position {
+  padding: 0;
+  &_special {
+    @media (min-width: $xl) {
+      padding: 6px;
+    }
+  }
+  &_top-outer {
+    @media (min-width: $xl) {
+      position: relative;
+      top: 10px;
+    }
+  }
+}

@@ -1,2 +1,17 @@
+//- this is mixin
+include ../card/_card-program
 section.section.section-program
-  
+  .container
+    .section-program__box-text
+      h2.section__heading yoga feature program
+      p.section__subtitle.section__subtitle_position_outer Our Classes
+    .section-program__box-card-program
+      .grid
+        .grid__item.grid__item_position_special.width-1-2-xl
+          +cardProgram('Yoga For Health', '../img/photo-program-1.png')
+        .grid__item.grid__item_position_special.width-1-2-xl
+          +cardProgram('Yoga For Children', '../img/photo-program-2.png', 'card-program_position_outer_left')
+        .grid__item.grid__item_position_special.grid__item_position_top-outer.width-1-2-xl
+          +cardProgram('Yoga For Lose Weight', '../img/photo-program-3.png')
+        .grid__item.grid__item_position_special.grid__item_position_top-outer.width-1-2-xl
+          +cardProgram('Yoga For Elderly', '../img/photo-program-4.png', 'card-program_position_outer_left')
