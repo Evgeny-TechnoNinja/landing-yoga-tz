@@ -69,6 +69,12 @@ document.addEventListener('DOMContentLoaded', ()=> {
   // ==================
 
 
+  // ==== gallery
+  baguetteBox.run('#gallery', {
+    fullScreen: false,
+  });
+  // ===========
+
    // === assistant function
    function infoUser(txt, color) {
     notifyUser.innerText = txt;
