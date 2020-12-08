@@ -118,6 +118,22 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     // ==== form select
     $('#formSelect').niceSelect();
+    // ===============
+
+
+    // ======= slick slider about
+    $('#slickSliderAbout').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      adaptiveHeight: true,
+      dots: false,
+      prevArrow: false,
+      nextArrow: false,
+      speed: 400,
+      prevArrow: $('#btnSliderAboutPrev'),
+      nextArrow: $('#btnSliderAboutNext'),
+    });
+    // ===================
   });
 
 });
