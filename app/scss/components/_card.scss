@@ -82,3 +82,128 @@
     }
   }
 }
+
+.card-advantage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  &_position {
+    &_outer {
+      &_top {
+        margin-top: 45px;
+        @media (min-width: $md) {
+          margin-top: 0;
+        }
+      }
+      &_bottom {
+        @media (min-width: $md) {
+          margin-bottom: 30px;
+        }
+        @media (min-width: $lg) {
+          margin-bottom: 0;
+        }
+        &_special {
+          @media (min-width: $lg) {
+            margin-bottom: 40px;
+          }
+          @media (min-width: $xl) {
+            margin-bottom: 17px;
+          }
+        }
+      }
+    }
+  }
+  &__box-picture {
+    width: 70px;
+    height: 70px;
+    border: 2px solid $swatch_0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__infographics {
+    display: block;
+  }
+  &__picture {
+  }
+  &__box-text {
+    margin-top: 34px;
+    @media (min-width: $xl) {
+      margin-top: 30px;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    color: $swatch_0;
+    text-transform: uppercase;
+    font-weight: 700;
+    &_position {
+      display: block;
+      white-space: nowrap;
+      line-height: 26px;
+    }
+    @media (min-width: $xl) {
+      width: 179px;
+      margin: 0 auto;
+    }
+  }
+  &__txt {
+    padding-top: 25px;
+    color: $swatch_0;
+    line-height: 27px;
+    &_position {
+      &_inner {
+        @media (min-width: $md) {
+          padding-top: 52px;
+        }
+      }
+    }
+  }
+  // infographics icon position
+  .icon {
+    &_one {
+      width: 39px;
+      height: 31px;
+      background: url($setOnePath) -70px -83px;
+    }
+    &_two {
+      width: 43px;
+      height: 25px;
+      background: url($setOnePath) -10px -137px;
+    }
+    &_three {
+      width: 48px;
+      height: 53px;
+      background: url($setOnePath) -10px -10px;
+    }
+    &_four {
+      width: 34px;
+      height: 34px;
+      background: url($setOnePath) -147px -10px;
+    }
+    &_five {
+      width: 40px;
+      height: 34px;
+      background: url($setOnePath) -10px -83px;
+    }
+    &_six {
+      width: 19px;
+      height: 51px;
+      background: url($setOnePath) -147px -64px;
+    }
+    &_seven {
+      width: 49px;
+      height: 33px;
+      background: url($setOnePath) -78px -10px;
+    }
+    &_eight {
+      width: 28px;
+      height: 36px;
+      background: url($setOnePath) -201px -10px;
+    }
+  }
+}

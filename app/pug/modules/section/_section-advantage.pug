@@ -1,0 +1,25 @@
+//- this is mixin
+include ../card/_card-advantage
+section.section.section-advantage
+  .section__background
+    img.section__picture.section__picture_size_height(src="img/advantage-bg.png", alt="background")
+  .section__overlay
+  .container
+    .section-advantage__box-content
+      .grid
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_bottom card-advantage_position_outer_bottom_special', 'icon_one', 'improved overall', 'health')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top card-advantage_position_outer_bottom', 'icon_two', 'increased', 'concentration')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top card-advantage_position_outer_bottom', 'icon_three', 'blance', 'your mind')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top card-advantage_position_outer_bottom', 'icon_four', 'sleep', 'better')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top card-advantage_position_outer_bottom', 'icon_five', 'weight loss', '', 'card-advantage__txt_position_inner')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top card-advantage_position_outer_bottom', 'icon_six', 'strengthens', 'your bones')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top', 'icon_seven', 'increased', 'flexibility')
+        .grid__item.width-1-1.width-1-2-md.width-1-4-lg
+          +cardAdvantage('card-advantage_position_outer_top', 'icon_eight', 'lower blood', 'pressure')
