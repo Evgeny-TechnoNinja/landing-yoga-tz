@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
   // ==== gallery
-  baguetteBox.run('#gallery', {
+  baguetteBox.run('#galleryRun', {
     fullScreen: false,
   });
   // ===========
