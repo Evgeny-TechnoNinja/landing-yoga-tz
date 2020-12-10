@@ -165,5 +165,22 @@ document.addEventListener('DOMContentLoaded', ()=> {
       }) 
     });
     // ================
+    // for Scroll Smooth
+  function scrollSmooth(elem, time) {
+    $(elem).on("click", function () {
+      let href = $(this).attr("href");
+      $("html, body").animate(
+        {
+          scrollTop: $(href).offset().top,
+        },
+        {
+          duration: time,
+          easing: "linear",
+        }
+      );
+      return false;
+    });
+  }
+  scrollSmooth("a.js-smooth-scroll-slow", 900);
   });
 });
