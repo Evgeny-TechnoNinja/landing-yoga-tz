@@ -207,3 +207,109 @@
     }
   }
 }
+
+.card-goods {
+  margin: 0 auto;
+  max-width: 370px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 50px $swatch_19;
+  background-color: $swatch_0;
+  overflow: hidden;
+  &_position {
+    &_outer {
+      margin-top: 30px;
+    }
+  }
+  &__box-content-top {
+    background-color: $swatch_1;
+  }
+  &__box-text {
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .element-one-position {
+      padding-right: 20px;
+    }
+    .element-two-position {
+      padding-right: 5px;
+    }
+    .element-three-position {
+      padding-top: 38px;
+    }
+  }
+  &__txt {
+    display: inline-block;
+    color: $swatch_0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &_size {
+      &_middle {
+        font-size: 32px;
+      }
+      &_big {
+        font-size: 67px;
+      }
+      &_slim {
+        font-weight: 400;
+        font-size: 17px; // 18
+      }
+    }
+    &_theme {
+      &_black {
+        color: $swatch_3;
+      }
+    }
+  }
+  &__box-content-middle {
+  }
+  &__list {
+    padding-top: 51px;
+    padding-bottom: 51px;
+    // padding-left: 50px;
+    // padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    position: relative;
+    padding-bottom: 42px;
+    // padding-left: 25px;
+    white-space: nowrap;
+    &:last-child {
+      padding-bottom: 0;
+      &::after {
+        content: "";
+        display: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 98px;
+      height: 1px;
+      bottom: 19px;
+      left: 26%;
+      background-color: $swatch_6;
+      opacity: 0.5;
+    }
+  }
+
+  &__box-content-bottom {
+    padding-bottom: 50px;
+  }
+  &__box-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.js-bg-accent {
+  background-color: lighten($swatch_1, 2%);
+}

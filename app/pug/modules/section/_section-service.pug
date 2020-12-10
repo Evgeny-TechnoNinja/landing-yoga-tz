@@ -1,1 +1,19 @@
+//- this is mixin
+include ../card/_card-goods
 section.section.section-service
+  .section-service__box-figure
+    figure.section-service__figure
+      img.section-service__picture(src="img/service-bg-decor.png", alt="picture decor")
+  .container
+    .section-service__box-content-top
+      .grid
+        .grid__item.width-1-1.width-1-3-lg
+          +cardGoods('49', 'mon – fri', '8a.m – 8p.m', 'no')
+        .grid__item.width-1-1.width-1-3-lg
+          +cardGoods('69', 'mon – fri', '8a.m – 8p.m', 'yes')
+        .grid__item.width-1-1.width-1-3-lg
+          +cardGoods('99', 'mon – sun', '8a.m – 8p.m', 'yes')
+    .section-service__box-content-bottom
+      .section-service__box-slider
+        include ../slider/_slider-info
+        include ../slider/_slider-preview

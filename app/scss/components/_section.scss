@@ -368,4 +368,41 @@
 
 // section service
 .section-service {
+  margin-top: 70px;
+  position: relative;
+  background-color: $swatch_0;
+  &__box-figure {
+    position: absolute;
+    bottom: -205px;
+    right: 0;
+    width: 1253px;
+    height: auto;
+  }
+  &__figure {
+    margin: 0;
+  }
+  &__picture {
+    display: block;
+  }
+  &__box-content-top {
+    position: relative;
+    z-index: 1;
+    @media (min-width: $xl) {
+      margin-left: -21px;
+      margin-right: -17px;
+    }
+  }
+  &__box-content-bottom {
+    position: relative;
+    z-index: 1;
+    @media (min-width: $xl) {
+      margin-left: -21px;
+      margin-right: -17px;
+    }
+  }
+  &__box-slider {
+    @media (min-width: $xl) {
+      margin-top: 100px;
+    }
+  }
 }

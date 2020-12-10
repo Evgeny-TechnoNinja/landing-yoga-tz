@@ -1,0 +1,21 @@
+mixin cardGoods(cardGoodsTxtNum, cardGoodsTxtDate, cardGoodsTxtTime, cardGoodsTxtValue)
+  .card-goods.card-goods_position_outer
+    .card-goods__box-content-top(data-price=cardGoodsTxtNum)
+      .card-goods__box-text
+        span.card-goods__txt.card-goods__txt_size_middle.element-one-position $
+        span.card-goods__txt.card-goods__txt_size_big.element-two-position #{cardGoodsTxtNum}
+        span.card-goods__txt.element-three-position / month
+    .card-goods__box-content-middle
+      ul.card-goods__list
+        li.card-goods__item
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black entry date:&nbsp;
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black #{cardGoodsTxtDate}
+        li.card-goods__item
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black entry time:&nbsp; 
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black #{cardGoodsTxtTime}
+        li.card-goods__item
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black nutrition advicer:&nbsp;
+          span.card-goods__txt.card-goods__txt_size_slim.card-goods__txt_theme_black #{cardGoodsTxtValue}
+    .card-goods__box-content-bottom
+      .card-goods__box-button
+        button.button-buy(data-btn-price=cardGoodsTxtNum) Buy now

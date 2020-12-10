@@ -134,6 +134,36 @@ document.addEventListener('DOMContentLoaded', ()=> {
       nextArrow: $('#btnSliderAboutNext'),
     });
     // ===================
-  });
 
+    // ======= slick slider info and preview
+    $('#slickSliderInfo').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      dots: true,
+      asNavFor: '#slickSliderPreview',
+      dotsClass: 'info-dots',
+    });
+    $('#slickSliderPreview').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      asNavFor: '#slickSliderInfo',
+      dots: false,
+      focusOnSelect: true,
+      prevArrow: $('#btnSliderPreviewPrev'),
+      nextArrow: $('#btnSliderPreviewNext'),
+    });
+    // ==================
+
+    // accent card goods
+    $('.button-buy').on('mouseover mouseout', function(e){
+      $('.card-goods__box-content-top').each((index, value)=>{
+        if($(e.target).data('btn-price') === $(value).data('price')) {
+          $(value).toggleClass('js-bg-accent')
+        }
+      }) 
+    });
+    // ================
+  });
 });

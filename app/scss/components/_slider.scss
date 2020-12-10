@@ -1,3 +1,4 @@
+// slider about
 .slider-about {
   max-width: 570px;
   width: 300px;
@@ -60,5 +61,294 @@
     @media (min-width: $xl) {
       right: -28px;
     }
+  }
+}
+
+// slider info
+.slider-info {
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 893px;
+  background-color: $swatch_0;
+  box-shadow: 6px 6px 50px $swatch_19;
+  border-radius: 8px;
+  @media (min-width: $xl) {
+    max-width: 1280px;
+  }
+  &__item {
+  }
+  &__box-content {
+    @media (min-width: $md) {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    @media (min-width: $xl) {
+      padding-top: 30px;
+      height: 245px;
+      justify-content: space-around;
+    }
+  }
+  &__box-figure {
+    @media (min-width: $md) {
+      width: 148px;
+      height: 148px;
+    }
+    @media (min-width: $lg) {
+      margin-right: 5%;
+    }
+  }
+  &__figure {
+    margin: 0 auto;
+    max-width: 148px;
+    min-height: 148px;
+    border: 2px solid $swatch_2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $md) {
+      min-height: 100%;
+    }
+  }
+  &__picture {
+  }
+  &__box-text {
+    position: relative;
+    margin-top: 20px;
+    text-align: justify;
+    padding: 0 30px;
+    @media (min-width: $md) {
+      margin-top: 10px;
+      width: 460px;
+    }
+    @media (min-width: $xl) {
+      padding-left: 53px;
+      position: relative;
+      left: -138px;
+      width: 725px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 15px;
+      left: 2px;
+      top: 0;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPBAMAAAD5dJlYAAAAAXNSR0IB2cksfwAAADBQTFRFAAAAWmvrW2zrWmzqXG3qWm7rW2zrWmnwW2zrW2vrWmvsXGzsXGzrW2zrWm3sWmnpZ2N3FwAAABB0Uk5TAGb/VYgzuxHuzHeqmd1EIvoVa0wAAACDSURBVHicHY3rCcJgFEMjokVBcAQ9Kr6WECcoHcERHMEJihNIJ3CGTuAMjtAJmnx/LoHckyNpwk7Sndp3zlGqXidHNbTSkmtyz1dacVFaPtKfg4KG6tkU1FRFIA2cg3Jz7tinZO38Zpsy0IwsdKDyae0jkBbwy0y0T6ydUrRD1uzzwAgBVxefnKBerwAAAABJRU5ErkJggg==");
+      background-repeat: no-repeat;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 15px;
+      bottom: 67px;
+      right: 4px;
+      background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAPBAMAAAD5dJlYAAAAAXNSR0IB2cksfwAAADBQTFRFAAAAWmvrW2zrXG3qWmnpWmvsWmzqXGzsWmnwW2zrW2zrW2zrW2vrWm3sWm7rXGzr2azlygAAABB0Uk5TAGb/iCJ3VaoR7t27zEQzmaohF/EAAACASURBVHicHY3NDUEBGATHQZDwogUTPwdOKlDCixJUICqQV4E4OatEVCIqUIJv322T3ZmFgS5grwcY6houeoWR3uDpFpjqmbGuKnc6Z6bLyt8sC3pVPrrpoZbY1j1USt7RdL2mDD845Y9GP4Ee5HZHbqssQ9p7SiZpmx6tqzbDlH94dhjI1xjJ2gAAAABJRU5ErkJggg==");
+      background-repeat: no-repeat;
+      @media (min-width: $xl) {
+        bottom: 127px;
+        right: -48px;
+      }
+    }
+  }
+  &__txt {
+    margin-top: 0;
+    display: block;
+    &_decor-line {
+      @media (min-width: $lg) {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 66px;
+          left: 11px;
+          width: 2px;
+          height: 73px;
+          background-color: $swatch_6;
+          opacity: 0.5;
+          @media (min-width: $xl) {
+            top: 54px;
+          }
+        }
+      }
+    }
+    &_small {
+      font-size: 14px;
+    }
+    &_theme {
+      &_accent {
+        font-weight: 700;
+        color: $swatch_1;
+        @media (min-width: $xl) {
+          font-size: 17px;
+        }
+      }
+      &_italic {
+        font-style: italic;
+        line-height: 22px;
+        @media (min-width: $xl) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .info-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    top: -12px;
+    @media (min-width: $lg) {
+      position: absolute;
+      flex-direction: column;
+      right: 10px;
+      top: 64px;
+    }
+    @media (min-width: $xl) {
+      right: -64px;
+      top: 45px;
+    }
+  }
+  .info-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    @media (min-width: $lg) {
+      padding-bottom: 25px;
+    }
+    @media (min-width: $xl) {
+      padding-bottom: 38px;
+    }
+  }
+
+  .info-dots li button {
+    padding: 0;
+    position: relative;
+    font-size: 0;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid $swatch_2;
+  }
+
+  .info-dots li button:hover,
+  .info-dots li button:focus {
+    border: 2px solid $swatch_1;
+  }
+
+  li.slick-active button {
+    border: 2px solid $swatch_1;
+  }
+
+  .info-dots li.slick-active button::after {
+    content: "";
+    position: absolute;
+    background-color: $swatch_1;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+  }
+
+  .info-dots li button:hover::before {
+    content: "";
+    position: absolute;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $swatch_1;
+    border-radius: 50%;
+  }
+}
+
+//  slider preview
+.slider-preview {
+  position: relative;
+  width: 240px;
+  margin: 0 auto;
+  @media (min-width: $xl) {
+    position: relative;
+    top: -44px;
+    left: -145px;
+  }
+  &__item {
+  }
+  &__box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__box-figure {
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px $swatch_2;
+  }
+  &__figure {
+    margin: 0;
+  }
+  &__box-text {
+    padding-top: 15px;
+    padding-left: 10px;
+  }
+  &__txt {
+    display: block;
+    color: $swatch_3;
+    &_bold {
+      font-weight: 700;
+    }
+    &_small {
+      font-size: 12px;
+      color: $swatch_5;
+    }
+  }
+}
+
+.slider-preview-control {
+  position: relative;
+  width: 290px;
+  margin: 0 auto;
+  &__box-arrow {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    @media (min-width: $xl) {
+      width: 98%;
+      bottom: 50px;
+      left: -143px;
+    }
+  }
+  &__box-arrow-prev {
+    position: absolute;
+    left: 0;
+    top: -52px;
+  }
+  &__box-arrow-next {
+    position: absolute;
+    right: 0;
+    top: -52px;
   }
 }

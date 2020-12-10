@@ -41,15 +41,34 @@
   box-shadow: 6px 6px 9px $swatch_19;
   -webkit-tap-highlight-color: transparent;
   cursor: pointer;
+  &_size {
+    width: 29px;
+    height: 29px;
+  }
   &__icon-prev {
     width: auto;
     height: 21px;
+    &_size {
+      height: 15px;
+    }
   }
 }
 
 .button-arrow-next {
   @extend .button-arrow-prev;
+  &_size {
+    @extend .button-arrow-prev_size;
+  }
   &__icon-next {
     @extend .button-arrow-prev__icon-prev;
+    &_size {
+      @extend .button-arrow-prev__icon-prev_size;
+    }
   }
+}
+
+.button-buy {
+  @extend .button;
+  padding: 17px 53px;
+  border-radius: 20px;
 }
