@@ -1,7 +1,91 @@
 .footer {
   margin-top: 30px;
-  padding-top: 100px;
+  padding-top: 70px;
   background-color: $swatch_1;
   position: relative;
   z-index: 2;
+  @media (min-width: $lg) {
+    padding-top: 93px;
+  }
+  @media (min-width: $xl) {
+    margin-top: 112px;
+  }
+  &__box-content-base {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 9%;
+    @media (min-width: $lg) {
+      max-width: 100%;
+      padding-left: 3%;
+    }
+    @media (min-width: $xl) {
+      padding-left: 0;
+    }
+  }
+  &__box-text {
+    max-width: 462px;
+    &_position {
+      &_inner {
+        padding-left: 23px;
+      }
+    }
+    @media (min-width: $md) {
+      max-width: 550px;
+    }
+    @media (min-width: $lg) {
+      width: 462px;
+    }
+  }
+  &__title {
+    color: $swatch_0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &__txt {
+    margin-top: 0;
+    padding-right: 10%;
+    color: $swatch_0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: justify;
+    @media (min-width: $lg) {
+      margin-top: 51px;
+      text-align: left;
+    }
+  }
+  &__box-list-social {
+    margin-top: 50px;
+    @media (min-width: $lg) {
+      margin-top: 68px;
+    }
+  }
+  &__box-list-address {
+    @media (min-width: $lg) {
+      margin-top: 50px;
+      margin-left: 18px;
+    }
+  }
+  &__box-content-bottom {
+    min-height: 100px;
+    background-color: $swatch_10;
+    @media (min-width: $lg) {
+      margin-top: 50px;
+    }
+    @media (min-width: $xl) {
+      margin-top: 75px;
+    }
+  }
+  &__box-copyright {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__txt-copyright {
+    margin: 0;
+    font-size: 16px;
+    color: $swatch_11;
+  }
 }

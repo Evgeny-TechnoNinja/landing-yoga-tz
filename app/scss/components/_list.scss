@@ -1,0 +1,167 @@
+// list social
+.list-social {
+  padding-bottom: 15px;
+  display: flex;
+  &__item {
+  }
+  &__item + .list-social__item {
+    margin-left: 17px;
+    @media (min-width: $lg) {
+      margin-left: 19px;
+    }
+  }
+  &__link {
+    display: inline-block;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  &__icon {
+    display: block;
+    width: auto;
+    height: 21px;
+    &_one {
+      width: 17px;
+      height: 21px;
+      background: url($setOnePathTwo) -96px -51px;
+    }
+    &_two {
+      width: 25px;
+      height: 21px;
+      background: url($setOnePathTwo) -10px -10px;
+    }
+    &_three {
+      width: 13px;
+      height: 21px;
+      background: url($setOnePathTwo) -135px -10px;
+    }
+    &_four {
+      width: 19px;
+      height: 21px;
+      background: url($setOnePathTwo) -96px -10px;
+    }
+    &_five {
+      width: 21px;
+      height: 21px;
+      background: url($setOnePathTwo) -55px -10px;
+    }
+  }
+}
+
+// list address
+.list-address {
+  padding-bottom: 40px;
+  @media (min-width: $md) {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    @media (min-width: $md) {
+      width: 50%;
+    }
+    &_position {
+      &_special {
+        @media (min-width: $md) {
+          margin-top: 25px;
+        }
+        @media (min-width: $lg) {
+          margin-top: 0;
+        }
+      }
+      &_target {
+        @media (min-width: $lg) {
+          order: 1;
+        }
+      }
+      &_inner {
+        @media (min-width: $lg) {
+          position: relative;
+          top: 25px;
+        }
+      }
+      &_left {
+        @media (min-width: $lg) {
+          position: relative;
+          left: 35px;
+        }
+      }
+    }
+  }
+  &__item + .list-address__item {
+    padding-top: 10px;
+    @media (min-width: $md) {
+      padding-top: 0;
+    }
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $swatch_0;
+    line-height: 22px;
+    &:hover {
+      color: $swatch_0;
+      text-decoration: underline;
+    }
+  }
+  &__txt {
+    margin: 0;
+    color: $swatch_0;
+    line-height: 22px;
+    &_position {
+      display: block;
+    }
+  }
+  &__icon {
+    width: auto;
+    height: 13px;
+    position: absolute;
+    left: 3px;
+    top: 6px;
+    &_position {
+      &_icon-two {
+        top: 13px;
+        @media (min-width: $xl) {
+          top: 4px;
+        }
+      }
+      &_icon-three {
+        top: 14px;
+        @media (min-width: $md) {
+          top: 8px;
+        }
+      }
+      &_icon-four {
+        top: 11px;
+        @media (min-width: $md) {
+          top: 2px;
+        }
+      }
+    }
+    &_one {
+      width: 15px;
+      height: 21px;
+      background: url($setOnePathTwo) -10px -92px;
+    }
+    &_two {
+      width: 21px;
+      height: 21px;
+      background: url($setOnePathTwo) -10px -51px;
+    }
+    &_three {
+      width: 21px;
+      height: 13px;
+      background: url($setOnePathTwo) -45px -92px;
+    }
+    &_four {
+      width: 21px;
+      height: 21px;
+      background: url($setOnePathTwo) -51px -51px;
+    }
+  }
+}
