@@ -116,7 +116,7 @@ gulp.task("img", () => {
 //img-compress
 gulp.task("tingpng", () => {
   gulp
-    .src("app/img/*.+(png|jpg)")
+    .src(["!app/img/favicon", "!app/img/svg", "app/img/**/*.+(png|jpg)"])
     .pipe(tingpng(process.env.TINGPNG_API_KEY)) 
     .pipe(gulp.dest("dist/img"))
     .pipe(notify({ message: "All images are successfully compressed" }));
@@ -163,8 +163,7 @@ gulp.task("build", ["scss", "pug", "tingpng"], () => {
     buildJs = gulp.src("app/js/*-min.js").pipe(gulp.dest("dist/js")),
     buildLibsJs = gulp.src("app/libs/*-min.js").pipe(gulp.dest("dist/libs")),
     buildPhp = gulp.src("app/backend/*.php").pipe(gulp.dest("dist/backend")),
-    buildFavicon = gulp
-      .src("app/img/favicon/*")
-      .pipe(gulp.dest("dist/img/favicon")),
+    buildFavicon = gulp.src("app/img/favicon/*").pipe(gulp.dest("dist/img/favicon")),
+    buildSvg = gulp.src("app/img/svg/*").pipe(gulp.dest("dist/img/svg")),
     buildHtml = gulp.src("app/*.html").pipe(gulp.dest("dist"));
 });
